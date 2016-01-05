@@ -25,7 +25,6 @@ class App extends React.Component {
   render() {
     const result = this.state.result;
     const firstPoll = this.state.polls[0];
-
     // once we have a poll result display it
     if (result) {
       const resultAndPoll = {
@@ -45,7 +44,7 @@ class App extends React.Component {
     // else if no poll, display message
     if (!firstPoll) {
       return (
-        <div>No more polls</div>
+        <div>you answered</div>
       );
     }
 
@@ -62,7 +61,7 @@ class App extends React.Component {
           {x}
           </label>
          )) }
-          <button type="submit">Vote</button>
+          <button type="submit">submit</button>
       </form>
     );
   }

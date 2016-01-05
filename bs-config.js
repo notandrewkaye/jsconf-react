@@ -14,19 +14,37 @@ var PollRecord = Immutable.Record({
 
 polls = polls.push(new PollRecord({
   "id": "p1",
-  "question": "What is 1 + 1?",
+  "question": "Do you google symptoms before asking a doctor?",
   "choices": [
-    "one",
-    "two"
+    "yes",
+    "no"
   ]
 }));
 
 polls = polls.push(new PollRecord({
   "id": "p2",
-  "question": "What is 2 + 2?",
+  "question": "Do you know where your medical record is?",
   "choices": [
-    "three",
-    "four"
+    "yes",
+    "no"
+  ]
+}));
+
+polls = polls.push(new PollRecord({
+  "id": "p3",
+  "question": "Do share health data with your family?",
+  "choices": [
+    "yes",
+    "no"
+  ]
+}));
+
+polls = polls.push(new PollRecord({
+  "id": "p4",
+  "question": "Do you know what question 4 is?",
+  "choices": [
+    "yes",
+    "no"
   ]
 }));
 

@@ -1,39 +1,41 @@
-// Constants
-@mainFontSize: 20px;
-@extraSmallFontSize: 14px;
-
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: @mainFontSize;
+  font-size: 20px;
   background-color: #2d2d2d;
   margin: 40px;
   color: #fff;
 }
-
 a {
   text-decoration: none;
   padding: 0 2px;
 }
-a:hover { background-color: lightblue; }
-
-input, textarea, button {
+a:hover {
+  background-color: lightblue;
+}
+input,
+textarea,
+button {
   font-size: 18px;
   border-radius: 6px;
 }
-
 button {
   margin-top: 10px;
   margin-right: 5px;
   margin-bottom: 10px;
 }
-
 .devHelp {
   color: grey;
-  font-size: @extraSmallFontSize;
+  font-size: 14px;
 }
-
 .poll {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  button { width: 100px; }
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.poll button {
+  width: 100px;
 }
